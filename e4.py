@@ -13,7 +13,7 @@ largest = 0
 for i in range(999, 100, -1):
     for j in range(999, i, -1):
         new = i * j
-        if is_palindrome(new) and new > largest:
+        if new > largest and is_palindrome(new):
             largest = new
 print(largest)
 
