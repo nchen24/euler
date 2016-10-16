@@ -10,8 +10,8 @@ def is_palindrome(num):
     return False
 
 largest = 0
-for i in range(100, 999):
-    for j in range(100, 999):
+for i in range(999, 100, -1):
+    for j in range(999, 100, -1):
         new = i * j
         if is_palindrome(new) and new > largest:
             largest = new
